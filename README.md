@@ -1,7 +1,7 @@
 eslint-config
 ================
 
-[![npm version](https://img.shields.io/npm/v/eslint-config.svg)](https://npmjs.org/package/eslint-config)
+[![npm version](https://img.shields.io/npm/v/eslint-config.svg)](https://www.npmjs.com/package/@lemonbot.fun/eslint-config-base)
 
 The config extends [`eslint-config-airbnb`](https://www.npmjs.com/package/eslint-config-airbnb) by adding support for the following:
 
