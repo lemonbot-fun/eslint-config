@@ -1,7 +1,10 @@
 module.exports = {
   env: {
-    jest: true
+    node: true
   },
+  extends: [
+    require.resolve('../index'),
+  ],
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: "module",

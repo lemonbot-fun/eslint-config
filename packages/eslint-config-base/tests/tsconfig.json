@@ -21,5 +21,6 @@
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "allowJs": true
-  }
+  },
+  "include": ["./bad.ts"]
 }

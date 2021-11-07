@@ -8,8 +8,8 @@ Enhances Airbnb's ESLint config with TypeScript support
 
 ```bash
 npm install @lemonbot.fun/eslint-config-base \
-            @typescript-eslint/eslint-plugin@^4.29.3 \
-            @typescript-eslint/parser@^4.29.3 \
+            @typescript-eslint/eslint-plugin@^5.0.0 \
+            @typescript-eslint/parser@^5.0.0 \
             --save-dev
 ```
 
