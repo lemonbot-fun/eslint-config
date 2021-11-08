@@ -38,6 +38,12 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-explicit-any.md
     '@typescript-eslint/no-explicit-any': 0,
 
+
+    // 关闭 '@typescript-eslint/no-non-null-assertion' 校验
+    // Turn off '@typescript-eslint/no-non-null-assertion'
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-assertion.md
+    '@typescript-eslint/no-non-null-assertion': 0,
+
     //
     '@typescript-eslint/no-unused-expressions': 0,
     //
