@@ -8,7 +8,7 @@ const { pkgs } = require('./utils');
 pkgs.forEach((name) => {
   const pkgTestDir = path.resolve(__dirname, '../packages', name, 'tests');
 
-  test(`Test pkg: ${name}.`, async (t) => {
+  test(`Test pkg: "${name}" eslint config can be used.`, async (t) => {
     const snapFile = path.resolve(pkgTestDir, './results.snap.json');
     const snap = JSON.parse(fs.readFileSync(snapFile));
 
