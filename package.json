@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "change": "rush change",
-    "publish": "rush publish -a -p",
+    "publish": "rush publish -a -p --set-access-level=public --registry=https://registry.npmjs.org/",
     "test": "rush test",
     "update-snap": "rush update-snap"
   },
