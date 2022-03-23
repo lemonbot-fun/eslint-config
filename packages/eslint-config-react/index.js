@@ -1,32 +1,26 @@
 module.exports = {
   extends: [
-    "airbnb-typescript",
-    "plugin:react/recommended",
-    "plugin:import/typescript",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:promise/recommended",
-    "plugin:compat/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:prettier/recommended",
+    require.resolve('@lemonbot.fun/eslint-config-base/index'), //
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
   ],
   env: {
     browser: true,
     node: true,
   },
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
+  plugins: ['prettier'],
   parserOptions: {
     ecmaVersion: 2020,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  rules: {
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-var-requires": "off",
-    "no-param-reassign": ["error", { props: false }],
-  },
+  rules: {},
   settings: {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
-  },
+    react: {
+      version: "detect",
+    },
+  }
 };

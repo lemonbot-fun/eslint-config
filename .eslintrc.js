@@ -3,22 +3,13 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: [
-    'eslint-config-airbnb-base',
-  ],
+  extends: ['./packages/eslint-config-base/index'],
+  rules: {},
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
+    sourceType: 'module',
+    project: './tsconfig.eslint.json',
   },
-  rules: {},
-  overrides: [
-    {
-      files: [
-        '**/__tests__/*.js',
-        '**/tests/unit/**/*.spec.js',
-      ],
-      env: {
-        jest: true,
-      },
-    },
-  ],
+  plugins: ['@typescript-eslint'],
 };

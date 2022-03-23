@@ -3,48 +3,44 @@
   "version": "0.1.9",
   "description": "The eslint config for personal",
   "main": "index.js",
-  "repository": "https://www.npmjs.com/org/lemonbot.fun/eslint-config-base",
+  "repository": "https://github.com/lemonbot-fun/eslint-config.git",
+  "homepage": "https://github.com/lemonbot-fun/eslint-config/tree/master/packages/eslint-config-base",
   "author": "chaoyue-chang <chaoyue.chang@gmail.com> (https://github.com/jason-chang)",
   "files": [
-    "index.js"
+    "index.js",
+    "README.md"
   ],
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "test": "node ./tests/test.js",
+    "update-snap": "node ./tests/snapshot.js"
+  },
   "dependencies": {
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^14.0.1",
-    "eslint-config-prettier": "^6.15.0",
     "eslint-import-resolver-webpack": "^0.13.0",
-    "eslint-plugin-compat": "^3.7.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.21.2",
-    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.4",
-    "eslint-plugin-testcafe": "^0.2.1"
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-compat": "^3.7.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^7.0.0 || ^8.0.0",
-    "prettier": "^2.0.5",
     "typescript": "^4.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "~5.15.0",
     "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^8.0.0",
-    "prettier": "^2.0.5",
-    "typescript": "^4.0.0"
-  },
-  "eslintConfig": {
-    "extends": "./index.js"
+    "typescript": "^4.0.0",
+    "tape": "~5.5.2"
   },
   "renovate": {
     "extends": [
       "bliss"
     ]
-  },
-  "gitHead": "ed5464fc84e0f16dac663a5ab0acdd98b475218f",
-  "private": false
+  }
 }

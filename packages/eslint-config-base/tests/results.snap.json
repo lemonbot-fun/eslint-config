@@ -1,6 +1,6 @@
 [
   {
-    "filePath": "/Users/changchaoyue/OpenSource/lemonbot.fun/eslint-config/packages/eslint-config-base/tests/bad.ts",
+    "filePath": "/Users/jason/OpenSource/lemonbot.fun/eslint-config/packages/eslint-config-base/tests/bad.ts",
     "messages": [
       {
         "ruleId": "prefer-const",
@@ -19,35 +19,6 @@
           ],
           "text": "const foo = \"adsf\";"
         }
-      },
-      {
-        "ruleId": "@typescript-eslint/quotes",
-        "severity": 2,
-        "message": "Strings must use singlequote.",
-        "line": 1,
-        "column": 11,
-        "nodeType": "Literal",
-        "messageId": "wrongQuotes",
-        "endLine": 1,
-        "endColumn": 17,
-        "fix": {
-          "range": [
-            10,
-            16
-          ],
-          "text": "'adsf'"
-        }
-      },
-      {
-        "ruleId": "no-console",
-        "severity": 1,
-        "message": "Unexpected console statement.",
-        "line": 2,
-        "column": 1,
-        "nodeType": "MemberExpression",
-        "messageId": "unexpected",
-        "endLine": 2,
-        "endColumn": 12
       },
       {
         "ruleId": "@typescript-eslint/no-unused-vars",
@@ -77,55 +48,15 @@
           ],
           "text": "const bar = \"adsf\";"
         }
-      },
-      {
-        "ruleId": "@typescript-eslint/quotes",
-        "severity": 2,
-        "message": "Strings must use singlequote.",
-        "line": 3,
-        "column": 11,
-        "nodeType": "Literal",
-        "messageId": "wrongQuotes",
-        "endLine": 3,
-        "endColumn": 17,
-        "fix": {
-          "range": [
-            46,
-            52
-          ],
-          "text": "'adsf'"
-        }
       }
     ],
-    "errorCount": 4,
+    "suppressedMessages": [],
+    "errorCount": 2,
     "fatalErrorCount": 0,
-    "warningCount": 2,
-    "fixableErrorCount": 4,
+    "warningCount": 1,
+    "fixableErrorCount": 2,
     "fixableWarningCount": 0,
     "source": "let foo = \"adsf\";\nconsole.log(foo);\nlet bar = \"adsf\";\n",
-    "usedDeprecatedRules": [
-      {
-        "ruleId": "lines-around-directive",
-        "replacedBy": [
-          "padding-line-between-statements"
-        ]
-      },
-      {
-        "ruleId": "global-require",
-        "replacedBy": []
-      },
-      {
-        "ruleId": "no-buffer-constructor",
-        "replacedBy": []
-      },
-      {
-        "ruleId": "no-new-require",
-        "replacedBy": []
-      },
-      {
-        "ruleId": "no-path-concat",
-        "replacedBy": []
-      }
-    ]
+    "usedDeprecatedRules": []
   }
 ]

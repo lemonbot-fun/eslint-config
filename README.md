@@ -5,7 +5,6 @@ eslint-config
 
 The config extends [`eslint-config-airbnb`](https://www.npmjs.com/package/eslint-config-airbnb) by adding support for the following:
 
-* [`eslint-plugin-prettier`](https://github.com/prettier/eslint-plugin-prettier)
 * [`eslint-plugin-compat`](https://github.com/amilajack/eslint-plugin-compat)
 
 and more...

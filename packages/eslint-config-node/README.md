@@ -1,4 +1,4 @@
-# lemonbot/eslint-config-base
+# lemonbot/eslint-config-node
 
 Enhances Airbnb's ESLint config with TypeScript support
 
@@ -7,7 +7,7 @@ Enhances Airbnb's ESLint config with TypeScript support
 ### 1) Install dependencies (and peer dependencies)
 
 ```bash
-npm install @lemonbot.fun/eslint-config-base \
+npm install @lemonbot.fun/eslint-config-node \
             @typescript-eslint/eslint-plugin@^5.0.0 \
             @typescript-eslint/parser@^5.0.0 \
             typescript \
@@ -20,7 +20,7 @@ Within your ESLint config file:
 
 ```diff
 extends: [
-  require.resolve('@lemonbot.fun/eslint-config-base/index'),
+  require.resolve('@lemonbot.fun/eslint-config-node/index'),
 ]
 ```
 
@@ -34,7 +34,7 @@ For example:
 
 ```diff
 {
-  extends: [require.resolve('@lemonbot.fun/eslint-config-base/index')],
+  extends: [require.resolve('@lemonbot.fun/eslint-config-node/index')],
 + parserOptions: {
 +   project: './tsconfig.json'
 + }

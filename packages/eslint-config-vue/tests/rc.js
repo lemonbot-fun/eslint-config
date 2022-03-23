@@ -1,11 +1,12 @@
 module.exports = {
   env: {
-    node: true
+    node: true,
   },
+  extends: [require.resolve('../index')],
   parserOptions: {
     ecmaVersion: 2020,
-    sourceType: "module",
+    sourceType: 'module',
     project: './tsconfig.json',
     tsconfigRootDir: __dirname,
   },
-}
+};
