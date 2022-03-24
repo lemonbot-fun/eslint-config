@@ -8,5 +8,6 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
     tsconfigRootDir: __dirname,
+    extraFileExtensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
   },
 };

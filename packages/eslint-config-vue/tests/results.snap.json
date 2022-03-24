@@ -1,26 +1,71 @@
 [
   {
-    "filePath": "/Users/jason/OpenSource/lemonbot.fun/eslint-config/packages/eslint-config-vue/tests/bad.ts",
+    "filePath": "/Users/jason/OpenSource/lemonbot.fun/eslint-config/packages/eslint-config-vue/tests/bad.vue",
     "messages": [
+      {
+        "ruleId": "vue/html-self-closing",
+        "severity": 1,
+        "message": "Require self-closing on HTML elements (<div>).",
+        "line": 2,
+        "column": 3,
+        "nodeType": "VElement",
+        "endLine": 2,
+        "endColumn": 34,
+        "fix": {
+          "range": [
+            37,
+            44
+          ],
+          "text": "/>"
+        }
+      },
+      {
+        "ruleId": "vue/attributes-order",
+        "severity": 2,
+        "message": "Attribute \"ref\" should go before \"size\".",
+        "line": 2,
+        "column": 17,
+        "nodeType": "VAttribute",
+        "endLine": 2,
+        "endColumn": 27,
+        "fix": {
+          "range": [
+            18,
+            37
+          ],
+          "text": "ref=\"root\" size=\"1\""
+        }
+      },
+      {
+        "ruleId": "vue/multi-word-component-names",
+        "severity": 2,
+        "message": "Component name \"Bad\" should always be multi-word.",
+        "line": 9,
+        "column": 9,
+        "nodeType": "Literal",
+        "messageId": "unexpected",
+        "endLine": 9,
+        "endColumn": 14
+      },
       {
         "ruleId": "@typescript-eslint/no-unused-vars",
         "severity": 1,
         "message": "'bar' is assigned a value but never used.",
-        "line": 3,
-        "column": 7,
+        "line": 13,
+        "column": 11,
         "nodeType": "Identifier",
         "messageId": "unusedVar",
-        "endLine": 3,
-        "endColumn": 10
+        "endLine": 13,
+        "endColumn": 14
       }
     ],
     "suppressedMessages": [],
-    "errorCount": 0,
+    "errorCount": 2,
     "fatalErrorCount": 0,
-    "warningCount": 1,
-    "fixableErrorCount": 0,
-    "fixableWarningCount": 0,
-    "source": "const foo = \"adsf\";\nconsole.log(foo);\nconst bar = \"adsf\";\n",
+    "warningCount": 2,
+    "fixableErrorCount": 1,
+    "fixableWarningCount": 1,
+    "source": "<template>\n  <div size=\"1\" ref=\"root\"></div>\n</template>\n\n<script lang=\"ts\">\nimport { defineComponent } from 'vue';\n\nexport default defineComponent({\n  name: 'Bad',\n  setup() {\n    const foo = \"adsf\";\n    console.log(foo);\n    const bar = \"adsf\";\n  }\n});\n</script>\n",
     "usedDeprecatedRules": []
   }
 ]

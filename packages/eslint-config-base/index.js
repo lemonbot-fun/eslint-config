@@ -57,10 +57,10 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-use-before-define.md
     '@typescript-eslint/no-use-before-define': ['error'],
 
-    // 关闭 'array-callback-return' 校验
-    // Turn off 'array-callback-return'
+    // 开启 'array-callback-return' 校验
+    // Turn on 'array-callback-return'
     // https://eslint.org/docs/rules/array-callback-return
-    'array-callback-return': 0,
+    'array-callback-return': ['error'],
 
     // 开启 'class-methods-use-this' 校验
     // Turn on 'class-methods-use-this'
@@ -72,21 +72,34 @@ module.exports = {
     // https://eslint.org/docs/rules/consistent-return
     'consistent-return': 0,
 
+    // 关闭 'global-require' 校验 允许在非全局范围使用 require
+    // Turn off 'global-require'
+    // https://eslint.org/docs/rules/global-require
+    'global-require': 0,
+
     // 关闭 'import/no-cycle' 校验
     // Turn off 'import/no-cycle'
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-cycle.md
     'import/no-cycle': 0,
 
-    // @todo
+    // 设置 'import/no-unresolved' 校验
+    // Turn on 'import/no-unresolved'
+    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unresolved.md
     'import/no-unresolved': ['error', { commonjs: true }],
 
-    // @todo
+    // 关闭 'import/prefer-default-export' 校验
+    // Turn off 'import/prefer-default-export'
+    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
     'import/prefer-default-export': 0,
 
-    // @todo
+    // 关闭 'import/extensions' 校验 允许倒入模块时不写扩展名
+    // Turn off 'import/extensions'
+    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md
     'import/extensions': 0,
 
-    // @todo
+    // 关闭 'import/newline-after-import' 校验 import/require 后可以不留空行
+    // Turn off 'import/newline-after-import'
+    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/newline-after-import.md
     'import/newline-after-import': 0,
 
     // 开启 '@typescript-eslint/no-non-null-assertion' 校验
@@ -94,8 +107,15 @@ module.exports = {
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md
     'import/no-extraneous-dependencies': ['error'],
 
-    // @todo
+    // 开启 'lines-between-class-members' 校验 要求多行类成员后留空行
+    // Turn on 'lines-between-class-members'
+    // https://eslint.org/docs/rules/lines-between-class-members
     'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+
+    // 关闭 'max-classes-per-file' 校验, 允许在一个文件内定义多个类
+    // Turn on 'max-classes-per-file'
+    // https://eslint.org/docs/rules/max-classes-per-file
+    'max-classes-per-file': 0,
 
     // 设置行最大长度
     // enforce a maximum line length (max-len)
@@ -107,16 +127,24 @@ module.exports = {
     // https://eslint.org/docs/rules/no-bitwise
     'no-bitwise': 0,
 
-    // @todo
+    // 关闭 'no-continue' 校验, 允许使用 continue 关键字
+    // Turn off 'no-continue'
+    // https://eslint.org/docs/rules/no-continue
     'no-continue': 0,
 
-    // @todo
+    // 关闭 'no-multi-assign' 校验, 允许连续赋值
+    // Turn off 'no-multi-assign'
+    // https://eslint.org/docs/rules/no-multi-assign
     'no-multi-assign': 0,
 
-    // @todo
+    // 设置 'no-multiple-empty-lines' 校验
+    // Turn on 'no-multiple-empty-lines'
+    // https://eslint.org/docs/rules/no-multiple-empty-lines
     'no-multiple-empty-lines': ['error', { max: 2, maxBOF: 1 }],
 
-    // @todo
+    // 关闭 'no-nested-ternary' 校验, 允许连续的三元判断。
+    // Turn off 'no-multiple-empty-lines'
+    // https://eslint.org/docs/rules/no-nested-ternary
     'no-nested-ternary': 0,
 
     // 禁止 "with" 操作符，匿名 function ，允许 "in" 操作符。
@@ -124,37 +152,32 @@ module.exports = {
     // https://eslint.org/docs/rules/no-restricted-syntax
     'no-restricted-syntax': ['error', 'WithStatement', 'BinaryExpression[operator="in"]'],
 
-    // @todo
-    'no-shadow': 0,
-
-    // @todo
+    // 设置 'no-param-reassign' 校验, 只允许整体赋值，不允许修改参数属性
+    // Turn on 'no-param-reassign'
+    // https://eslint.org/docs/rules/no-param-reassign
     'no-param-reassign': ['error', { props: false }],
 
-    // @todo
+    // 关闭 'no-plusplus' 校验 允许使用 ++ -- 操作符
+    // Turn off 'no-plusplus'
+    // https://eslint.org/docs/rules/no-plusplus
     'no-plusplus': 0,
-
-    // @todo
-    'no-underscore-dangle': 0,
-
-    // @todo
-    'no-useless-constructor': 0,
-
-    // @todo
-    'no-unused-expressions': 0,
 
     // @todo
     'no-unused-vars': 0,
 
-    // @todo
+    // 关闭 'object-curly-newline' 校验，对象字面量内是否换行根据上下文自行决定.
+    // Turn off 'object-curly-newline'
+    // https://eslint.org/docs/rules/no-plusplus
     'object-curly-newline': 0,
 
-    // @todo
+    // 关闭 'padded-blocks' 校验, 允许代码块首行留空。
+    // Turn off 'padded-blocks'
+    // https://eslint.org/docs/rules/no-plusplus
     'padded-blocks': 0,
 
-    // @todo
-    'prefer-destructuring': 0,
-
-    // @todo
+    // 关闭 'arrow-parens' 校验, 按需(多个参数)添加箭头函数参数的括号
+    // Turn off 'arrow-parens'
+    // https://eslint.org/docs/rules/arrow-parens
     'arrow-parens': ['error', 'as-needed'],
 
     // @todo

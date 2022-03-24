@@ -9,7 +9,10 @@ module.exports = {
     node: true,
   },
   parser: '@typescript-eslint/parser',
-  plugins: ['prettier'],
+  plugins: [
+    'react', //
+    'react-hooks'
+  ],
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
