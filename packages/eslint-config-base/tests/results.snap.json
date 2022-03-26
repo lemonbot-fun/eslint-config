@@ -1,6 +1,6 @@
 [
   {
-    "filePath": "/Users/jason/OpenSource/lemonbot.fun/eslint-config/packages/eslint-config-base/tests/bad.ts",
+    "filePath": "",
     "messages": [
       {
         "ruleId": "prefer-const",

@@ -1,6 +1,6 @@
 [
   {
-    "filePath": "/Users/jason/OpenSource/lemonbot.fun/eslint-config/packages/eslint-config-vue/tests/bad.vue",
+    "filePath": "",
     "messages": [
       {
         "ruleId": "vue/html-self-closing",

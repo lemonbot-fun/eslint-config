@@ -1,6 +1,6 @@
 [
   {
-    "filePath": "/Users/jason/OpenSource/lemonbot.fun/eslint-config/packages/eslint-config-react/tests/bad.ts",
+    "filePath": "",
     "messages": [
       {
         "ruleId": "@typescript-eslint/no-unused-vars",
