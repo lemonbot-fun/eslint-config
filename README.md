@@ -3,25 +3,16 @@ eslint-config
 
 [![npm version](https://img.shields.io/npm/v/@lemonbot.fun/eslint-config-base.svg)](https://www.npmjs.com/package/@lemonbot.fun/eslint-config-base)
 
-The config extends [`eslint-config-airbnb`](https://www.npmjs.com/package/eslint-config-airbnb) by adding support for the following:
+![Test Flags](https://github.com/lemonbot-fun/eslint-config/actions/workflows/test.yml/badge.svg)
 
-* [`eslint-plugin-compat`](https://github.com/amilajack/eslint-plugin-compat)
-
-and more...
+The config extends [`eslint-config-airbnb`](https://www.npmjs.com/package/eslint-config-airbnb) and more...
 
 ## Usage
 
-1. Install the config:
-```bash
-# Yarn
-yarn add --dev @lemonbot.fun/eslint-config-base
-# NPM
-npm install --save-dev @lemonbot.fun/eslint-config-base
-```
-2. Extend the config
-```jsonc
-// .eslintrc.json
-{
-  "extends": "@lemonbot.fun/eslint-config-base"
-}
-```
+[Eslint Config Base](./packages/eslint-config-base)
+
+[Eslint Config Node](./packages/eslint-config-node)
+
+[Eslint Config React](./packages/eslint-config-react)
+
+[Eslint Config Vue](./packages/eslint-config-vue)
