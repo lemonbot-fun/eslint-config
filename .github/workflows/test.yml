@@ -25,8 +25,19 @@ jobs:
           node-version: 16
           cache: 'pnpm'
 
-      - run: pnpm install
-      - run: pnpm exec rush install
+      - name: PNPM install
+        run: pnpm install
+
+      - name: Cache Rush Temp
+        uses: actions/cache@v3
+        with:
+          path: |
+            ./common/temp
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+
+      - name: Rush Install
+        run: pnpm exec rush install
 
       - name: Run unit tests
         run: pnpm run test
+
