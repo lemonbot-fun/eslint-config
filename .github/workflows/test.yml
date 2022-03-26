@@ -25,7 +25,6 @@ jobs:
           node-version: 16
           cache: 'pnpm'
 
-      - run: pnpm add rush --global
       - run: pnpm install
 
       - name: Run unit tests
