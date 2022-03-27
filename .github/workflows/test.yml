@@ -36,7 +36,7 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: Rush Install
-        run: pnpm exec rush install
+        run: pnpm exec rush update
 
       - name: Run unit tests
         run: pnpm run test
