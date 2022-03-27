@@ -6,7 +6,7 @@
       "name": "test",
       "summary": "Test each package.",
       "description": "Test each package.",
-      "enableParallelism": false
+      "enableParallelism": true
     },
     {
       "commandKind": "bulk",

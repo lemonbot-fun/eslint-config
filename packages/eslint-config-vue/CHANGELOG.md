@@ -1,6 +1,13 @@
 # Change Log - @lemonbot.fun/eslint-config-vue
 
-This log was last generated on Thu, 24 Mar 2022 03:18:00 GMT and should not be manually modified.
+This log was last generated on Sun, 27 Mar 2022 03:22:01 GMT and should not be manually modified.
+
+## 1.3.0
+Sun, 27 Mar 2022 03:22:01 GMT
+
+### Minor changes
+
+- 升级依赖版本
 
 ## 1.2.0
 Thu, 24 Mar 2022 03:18:00 GMT
