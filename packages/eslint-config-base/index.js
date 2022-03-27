@@ -180,6 +180,11 @@ module.exports = {
     // https://eslint.org/docs/rules/no-plusplus
     'padded-blocks': 0,
 
+    // 设置 'promise/catch-or-return' 校验
+    // Turn on 'promise/catch-or-return'
+    // https://github.com/xjamundx/eslint-plugin-promise/blob/development/docs/rules/catch-or-return.md
+    'promise/catch-or-return': ['error', {allowFinally: true}],
+
     // 关闭 'arrow-parens' 校验, 按需(多个参数)添加箭头函数参数的括号
     // Turn off 'arrow-parens'
     // https://eslint.org/docs/rules/arrow-parens
