@@ -57,6 +57,11 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-use-before-define.md
     '@typescript-eslint/no-use-before-define': ['error'],
 
+    // 关闭 '@typescript-eslint/return-await' 校验
+    // Turn off '@typescript-eslint/return-await'
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/return-await.md
+    '@typescript-eslint/return-await': 0,
+
     // 开启 'array-callback-return' 校验
     // Turn on 'array-callback-return'
     // https://eslint.org/docs/rules/array-callback-return

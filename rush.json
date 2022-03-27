@@ -17,6 +17,7 @@
     "postRushBuild": []
   },
   "variants": [],
+  "hotfixChangeEnabled": true,
   "projects": [
      {
        "packageName": "@lemonbot.fun/eslint-config-base",

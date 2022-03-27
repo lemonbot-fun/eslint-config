@@ -13,7 +13,9 @@
     "url": "git+https://github.com/lemonbot-fun/eslint-config.git"
   },
   "commitlint": {
-    "extends": ["gitmoji"]
+    "extends": [
+      "gitmoji"
+    ]
   },
   "devDependencies": {
     "@babel/register": "^7.16.0",
