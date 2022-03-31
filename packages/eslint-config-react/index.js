@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    require.resolve('@lemonbot.fun/eslint-config-base/index'), //
+    '@lemonbot.fun/eslint-config-base', //
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
   ],

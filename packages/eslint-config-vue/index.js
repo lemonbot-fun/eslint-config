@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    require.resolve('@lemonbot.fun/eslint-config-base/index'), //
+    '@lemonbot.fun/eslint-config-base', //
     'plugin:vue/vue3-recommended',
   ],
   env: {
@@ -8,14 +8,12 @@ module.exports = {
     node: true,
   },
   parser: 'vue-eslint-parser',
-  plugins: [
-    'vue',
-  ],
+  plugins: ['vue'],
   parserOptions: {
     parser: '@typescript-eslint/parser',
     ecmaVersion: 2020,
     sourceType: 'module',
-    tsconfigRootDir: process.cwd(),
+    ecmaFeatures: { jsx: true },
     extraFileExtensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
   },
   rules: {
