@@ -15,11 +15,13 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
+    ecmaFeatures: { jsx: true },
   },
   plugins: [
     'import', //
-    'prettier',
     'promise',
+    'prettier',
+    '@typescript-eslint/eslint-plugin'
   ],
   rules: {
     // 关闭 '@typescript-eslint/explicit-function-return-type' 校验
@@ -157,10 +159,10 @@ module.exports = {
     // https://eslint.org/docs/rules/no-restricted-syntax
     'no-restricted-syntax': ['error', 'WithStatement', 'BinaryExpression[operator="in"]'],
 
-    // 设置 'no-param-reassign' 校验, 只允许整体赋值，不允许修改参数属性
+    // 开启 'no-param-reassign' 校验
     // Turn on 'no-param-reassign'
     // https://eslint.org/docs/rules/no-param-reassign
-    'no-param-reassign': ['error', { props: false }],
+    'no-param-reassign': ['error'],
 
     // 关闭 'no-plusplus' 校验 允许使用 ++ -- 操作符
     // Turn off 'no-plusplus'

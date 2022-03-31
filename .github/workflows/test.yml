@@ -25,15 +25,15 @@ jobs:
           node-version: 16
           cache: 'pnpm'
 
-      - name: PNPM install
-        run: pnpm install
-
       - name: Cache Rush Temp
         uses: actions/cache@v3
         with:
           path: |
             ./common/temp
           key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+
+      - name: Install Rush
+        run: pnpm add @microsoft/rush --global
 
       - name: Rush Install
         run: pnpm exec rush update
