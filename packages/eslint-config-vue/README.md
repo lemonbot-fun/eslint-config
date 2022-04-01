@@ -12,6 +12,10 @@ npm install @lemonbot.fun/eslint-config-vue \
             @typescript-eslint/parser@^5.0.0 \
             typescript \
             eslint-plugin-vue \
+            eslint-plugin-import \
+            eslint-plugin-promise \
+            eslint-plugin-prettier \
+            eslint-plugin-compat \
             --save-dev
 ```
 
@@ -21,7 +25,7 @@ Within your ESLint config file:
 
 ```diff
 extends: [
-  require.resolve('@lemonbot.fun/eslint-config-vue/index'),
+  '@lemonbot.fun/eslint-config-vue',
 ]
 ```
 

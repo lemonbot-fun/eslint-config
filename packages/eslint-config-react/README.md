@@ -12,6 +12,10 @@ npm install @lemonbot.fun/eslint-config-react \
             @typescript-eslint/parser@^5.0.0 \
             typescript \
             eslint-plugin-react \
+            eslint-plugin-import \
+            eslint-plugin-promise \
+            eslint-plugin-prettier \
+            eslint-plugin-compat \
             --save-dev
 ```
 
@@ -21,7 +25,7 @@ Within your ESLint config file:
 
 ```diff
 extends: [
-  require.resolve('@lemonbot.fun/eslint-config-react/index'),
+  '@lemonbot.fun/eslint-config-react',
 ]
 ```
 

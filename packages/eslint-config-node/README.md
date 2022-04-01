@@ -11,6 +11,10 @@ npm install @lemonbot.fun/eslint-config-node \
             @typescript-eslint/eslint-plugin@^5.0.0 \
             @typescript-eslint/parser@^5.0.0 \
             typescript \
+            eslint-plugin-import \
+            eslint-plugin-promise \
+            eslint-plugin-prettier \
+            eslint-plugin-compat \
             --save-dev
 ```
 
@@ -28,15 +32,17 @@ extends: [
 
 This config requires knowledge of your TypeScript config.
 
-In your ESLint config, set [parserOptions.project](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsproject) to the path of your `tsconfig.json`.
+In your ESLint config, set [parserOptions.project](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsproject) to the path of your `tsconfig.eslint.json`.
 
 For example:
 
 ```diff
 {
-  extends: [require.resolve('@lemonbot.fun/eslint-config-node/index')],
+  extends: [
+    '@lemonbot.fun/eslint-config-node'
+  ],
 + parserOptions: {
-+   project: './tsconfig.json'
++   project: './tsconfig.eslint.json'
 + }
 }
 ```
