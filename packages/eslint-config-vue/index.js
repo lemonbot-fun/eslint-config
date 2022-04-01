@@ -17,6 +17,24 @@ module.exports = {
     extraFileExtensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
   },
   rules: {
+    // 关闭 '@typescript-eslint/dot-notation' 校验 开启 eslint dot-notation
+    // Turn off '@typescript-eslint/dot-notation'
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
+    '@typescript-eslint/dot-notation': 0,
+    'dot-notation': ['error'],
+
+    // 关闭 '@typescript-eslint/no-implied-eval' 校验 使用 eslint no-implied-eval
+    // Turn off '@typescript-eslint/no-implied-eval'
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/return-await.md
+    '@typescript-eslint/no-implied-eval': 0,
+    'no-implied-eval': ['error'],
+
+    // 关闭 '@typescript-eslint/no-implied-eval' 校验 使用 eslint no-throw-literal
+    // Turn off '@typescript-eslint/no-implied-eval'
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/return-await.md
+    '@typescript-eslint/no-throw-literal': 0,
+    'no-throw-literal': ['error'],
+
     // 开启 'vue/attributes-order' 校验
     // Turn on 'vue/attributes-order'
     // https://eslint.vuejs.org/rules/attributes-order.html
