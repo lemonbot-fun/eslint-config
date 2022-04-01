@@ -2,6 +2,18 @@
   "name": "@lemonbot.fun/eslint-config-base",
   "entries": [
     {
+      "version": "1.5.0",
+      "tag": "@lemonbot.fun/eslint-config-base_v1.5.0",
+      "date": "Thu, 31 Mar 2022 21:44:28 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "修复依赖引入方式"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.4.0",
       "tag": "@lemonbot.fun/eslint-config-base_v1.4.0",
       "date": "Thu, 31 Mar 2022 21:24:59 GMT",
