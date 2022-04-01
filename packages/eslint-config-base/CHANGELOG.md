@@ -1,6 +1,13 @@
 # Change Log - @lemonbot.fun/eslint-config-base
 
-This log was last generated on Fri, 01 Apr 2022 03:29:44 GMT and should not be manually modified.
+This log was last generated on Fri, 01 Apr 2022 03:35:44 GMT and should not be manually modified.
+
+## 1.7.0
+Fri, 01 Apr 2022 03:35:44 GMT
+
+### Minor changes
+
+- 修改 promise/catch-or-return 设置
 
 ## 1.6.0
 Fri, 01 Apr 2022 03:29:44 GMT

@@ -2,6 +2,18 @@
   "name": "@lemonbot.fun/eslint-config-base",
   "entries": [
     {
+      "version": "1.7.0",
+      "tag": "@lemonbot.fun/eslint-config-base_v1.7.0",
+      "date": "Fri, 01 Apr 2022 03:35:44 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "修改 promise/catch-or-return 设置"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.6.0",
       "tag": "@lemonbot.fun/eslint-config-base_v1.6.0",
       "date": "Fri, 01 Apr 2022 03:29:44 GMT",
