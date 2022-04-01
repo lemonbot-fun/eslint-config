@@ -109,10 +109,10 @@ module.exports = {
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/newline-after-import.md
     'import/newline-after-import': 0,
 
-    // 开启 '@typescript-eslint/no-non-null-assertion' 校验
+    // 设置 '@typescript-eslint/no-non-null-assertion' 校验
     // Turn on 'import/no-extraneous-dependencies'
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md
-    'import/no-extraneous-dependencies': ['error'],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
 
     // 开启 'lines-between-class-members' 校验 要求多行类成员后留空行
     // Turn on 'lines-between-class-members'
