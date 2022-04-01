@@ -1,6 +1,13 @@
 # Change Log - @lemonbot.fun/eslint-config-base
 
-This log was last generated on Thu, 31 Mar 2022 21:44:28 GMT and should not be manually modified.
+This log was last generated on Fri, 01 Apr 2022 03:29:44 GMT and should not be manually modified.
+
+## 1.6.0
+Fri, 01 Apr 2022 03:29:44 GMT
+
+### Minor changes
+
+- 修改 import/no-extraneous-dependencies 参数
 
 ## 1.5.0
 Thu, 31 Mar 2022 21:44:28 GMT
