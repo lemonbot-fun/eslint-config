@@ -1,6 +1,13 @@
 # Change Log - @lemonbot.fun/eslint-config-node
 
-This log was last generated on Thu, 31 Mar 2022 21:44:28 GMT and should not be manually modified.
+This log was last generated on Fri, 01 Apr 2022 04:13:52 GMT and should not be manually modified.
+
+## 1.3.1
+Fri, 01 Apr 2022 04:13:52 GMT
+
+### Patches
+
+- 修改安装文档
 
 ## 1.3.0
 Thu, 31 Mar 2022 21:44:28 GMT

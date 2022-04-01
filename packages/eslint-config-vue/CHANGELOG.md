@@ -1,6 +1,13 @@
 # Change Log - @lemonbot.fun/eslint-config-vue
 
-This log was last generated on Fri, 01 Apr 2022 03:10:13 GMT and should not be manually modified.
+This log was last generated on Fri, 01 Apr 2022 04:13:52 GMT and should not be manually modified.
+
+## 1.6.1
+Fri, 01 Apr 2022 04:13:52 GMT
+
+### Patches
+
+- 修改安装文档
 
 ## 1.6.0
 Fri, 01 Apr 2022 03:10:13 GMT

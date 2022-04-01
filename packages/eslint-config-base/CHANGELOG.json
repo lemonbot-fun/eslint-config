@@ -2,6 +2,18 @@
   "name": "@lemonbot.fun/eslint-config-base",
   "entries": [
     {
+      "version": "1.7.1",
+      "tag": "@lemonbot.fun/eslint-config-base_v1.7.1",
+      "date": "Fri, 01 Apr 2022 04:13:52 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "修改安装文档"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.7.0",
       "tag": "@lemonbot.fun/eslint-config-base_v1.7.0",
       "date": "Fri, 01 Apr 2022 03:35:44 GMT",
