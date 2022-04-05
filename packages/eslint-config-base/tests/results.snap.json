@@ -21,15 +21,22 @@
         }
       },
       {
-        "ruleId": "@typescript-eslint/no-unused-vars",
-        "severity": 1,
-        "message": "'bar' is assigned a value but never used.",
-        "line": 3,
-        "column": 5,
-        "nodeType": "Identifier",
-        "messageId": "unusedVar",
-        "endLine": 3,
-        "endColumn": 8
+        "ruleId": "@typescript-eslint/quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 1,
+        "column": 11,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 1,
+        "endColumn": 17,
+        "fix": {
+          "range": [
+            10,
+            16
+          ],
+          "text": "'adsf'"
+        }
       },
       {
         "ruleId": "prefer-const",
@@ -48,13 +55,42 @@
           ],
           "text": "const bar = \"adsf\";"
         }
+      },
+      {
+        "ruleId": "unused-imports/no-unused-vars",
+        "severity": 2,
+        "message": "'bar' is assigned a value but never used. Allowed unused vars must match /^_/u.",
+        "line": 3,
+        "column": 5,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 3,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "@typescript-eslint/quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 3,
+        "column": 11,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 3,
+        "endColumn": 17,
+        "fix": {
+          "range": [
+            46,
+            52
+          ],
+          "text": "'adsf'"
+        }
       }
     ],
     "suppressedMessages": [],
-    "errorCount": 2,
+    "errorCount": 5,
     "fatalErrorCount": 0,
-    "warningCount": 1,
-    "fixableErrorCount": 2,
+    "warningCount": 0,
+    "fixableErrorCount": 4,
     "fixableWarningCount": 0,
     "source": "let foo = \"adsf\";\nconsole.log(foo);\nlet bar = \"adsf\";\n",
     "usedDeprecatedRules": []

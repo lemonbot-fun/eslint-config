@@ -3,23 +3,6 @@
     "filePath": "",
     "messages": [
       {
-        "ruleId": "vue/html-self-closing",
-        "severity": 1,
-        "message": "Require self-closing on HTML elements (<div>).",
-        "line": 2,
-        "column": 3,
-        "nodeType": "VElement",
-        "endLine": 2,
-        "endColumn": 34,
-        "fix": {
-          "range": [
-            37,
-            44
-          ],
-          "text": "/>"
-        }
-      },
-      {
         "ruleId": "vue/attributes-order",
         "severity": 2,
         "message": "Attribute \"ref\" should go before \"size\".",
@@ -37,6 +20,42 @@
         }
       },
       {
+        "ruleId": "@typescript-eslint/object-curly-spacing",
+        "severity": 2,
+        "message": "There should be no space after '{'.",
+        "line": 6,
+        "column": 9,
+        "nodeType": "ImportDeclaration",
+        "messageId": "unexpectedSpaceAfter",
+        "endLine": 6,
+        "endColumn": 10,
+        "fix": {
+          "range": [
+            85,
+            86
+          ],
+          "text": ""
+        }
+      },
+      {
+        "ruleId": "@typescript-eslint/object-curly-spacing",
+        "severity": 2,
+        "message": "There should be no space before '}'.",
+        "line": 6,
+        "column": 25,
+        "nodeType": "ImportDeclaration",
+        "messageId": "unexpectedSpaceBefore",
+        "endLine": 6,
+        "endColumn": 26,
+        "fix": {
+          "range": [
+            101,
+            102
+          ],
+          "text": ""
+        }
+      },
+      {
         "ruleId": "vue/multi-word-component-names",
         "severity": 2,
         "message": "Component name \"Bad\" should always be multi-word.",
@@ -48,23 +67,77 @@
         "endColumn": 14
       },
       {
-        "ruleId": "@typescript-eslint/no-unused-vars",
-        "severity": 1,
-        "message": "'bar' is assigned a value but never used.",
+        "ruleId": "@typescript-eslint/quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 11,
+        "column": 17,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 11,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            193,
+            199
+          ],
+          "text": "'adsf'"
+        }
+      },
+      {
+        "ruleId": "unused-imports/no-unused-vars",
+        "severity": 2,
+        "message": "'bar' is assigned a value but never used. Allowed unused vars must match /^_/u.",
         "line": 13,
         "column": 11,
         "nodeType": "Identifier",
         "messageId": "unusedVar",
         "endLine": 13,
         "endColumn": 14
+      },
+      {
+        "ruleId": "@typescript-eslint/quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 13,
+        "column": 17,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 13,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            239,
+            245
+          ],
+          "text": "'adsf'"
+        }
+      },
+      {
+        "ruleId": "@typescript-eslint/comma-dangle",
+        "severity": 2,
+        "message": "Missing trailing comma.",
+        "line": 14,
+        "column": 4,
+        "nodeType": "Property",
+        "messageId": "missing",
+        "endLine": 15,
+        "endColumn": 1,
+        "fix": {
+          "range": [
+            250,
+            250
+          ],
+          "text": ","
+        }
       }
     ],
     "suppressedMessages": [],
-    "errorCount": 2,
+    "errorCount": 8,
     "fatalErrorCount": 0,
-    "warningCount": 2,
-    "fixableErrorCount": 1,
-    "fixableWarningCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 6,
+    "fixableWarningCount": 0,
     "source": "<template>\n  <div size=\"1\" ref=\"root\"></div>\n</template>\n\n<script lang=\"ts\">\nimport { defineComponent } from 'vue';\n\nexport default defineComponent({\n  name: 'Bad',\n  setup() {\n    const foo = \"adsf\";\n    console.log(foo);\n    const bar = \"adsf\";\n  }\n});\n</script>\n",
     "usedDeprecatedRules": []
   }

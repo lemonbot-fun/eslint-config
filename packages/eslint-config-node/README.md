@@ -11,10 +11,11 @@ npm i @lemonbot.fun/eslint-config-node \
             @typescript-eslint/eslint-plugin@^5.0.0 \
             @typescript-eslint/parser@^5.0.0 \
             typescript \
-            eslint-plugin-import \
-            eslint-plugin-promise \
-            eslint-plugin-prettier \
             eslint-plugin-compat \
+            eslint-plugin-import \
+            eslint-plugin-prettier \
+            eslint-plugin-promise \
+            eslint-plugin-unused-imports \
             -D
             
 #eg: pnpm
@@ -22,10 +23,11 @@ pnpm add @lemonbot.fun/eslint-config-node \
             @typescript-eslint/eslint-plugin@^5.0.0 \
             @typescript-eslint/parser@^5.0.0 \
             typescript \
-            eslint-plugin-import \
-            eslint-plugin-promise \
-            eslint-plugin-prettier \
             eslint-plugin-compat \
+            eslint-plugin-import \
+            eslint-plugin-prettier \
+            eslint-plugin-promise \
+            eslint-plugin-unused-imports \
             -D
             
 #eg: yarn
@@ -33,10 +35,11 @@ yarn add @lemonbot.fun/eslint-config-node \
             @typescript-eslint/eslint-plugin@^5.0.0 \
             @typescript-eslint/parser@^5.0.0 \
             typescript \
-            eslint-plugin-import \
-            eslint-plugin-promise \
-            eslint-plugin-prettier \
             eslint-plugin-compat \
+            eslint-plugin-import \
+            eslint-plugin-prettier \
+            eslint-plugin-promise \
+            eslint-plugin-unused-imports \
             --dev
 ```
 

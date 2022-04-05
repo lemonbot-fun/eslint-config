@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    '@lemonbot.fun/eslint-config-base', //
     'plugin:vue/vue3-recommended',
+    '@lemonbot.fun/eslint-config-base', //
   ],
   env: {
     browser: true,

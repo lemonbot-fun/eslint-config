@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
-    '@lemonbot.fun/eslint-config-base', //
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    '@lemonbot.fun/eslint-config-base', //
   ],
   env: {
     browser: true,
