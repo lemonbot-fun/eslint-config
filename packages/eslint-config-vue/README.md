@@ -7,7 +7,7 @@ Enhances Airbnb's ESLint config with TypeScript support
 ### 1) Install dependencies (and peer dependencies)
 
 ```bash
-npm install @lemonbot.fun/eslint-config-vue \
+npm i @lemonbot.fun/eslint-config-vue \
             @typescript-eslint/eslint-plugin@^5.0.0 \
             @typescript-eslint/parser@^5.0.0 \
             typescript \
@@ -16,7 +16,31 @@ npm install @lemonbot.fun/eslint-config-vue \
             eslint-plugin-promise \
             eslint-plugin-prettier \
             eslint-plugin-compat \
-            --save-dev
+            -D
+            
+# eg: pnpm
+pnpm add @lemonbot.fun/eslint-config-vue \
+            @typescript-eslint/eslint-plugin@^5.0.0 \
+            @typescript-eslint/parser@^5.0.0 \
+            typescript \
+            eslint-plugin-vue \
+            eslint-plugin-import \
+            eslint-plugin-promise \
+            eslint-plugin-prettier \
+            eslint-plugin-compat \
+            -D 
+            
+# eg: yarn
+yarn add @lemonbot.fun/eslint-config-vue \
+            @typescript-eslint/eslint-plugin@^5.0.0 \
+            @typescript-eslint/parser@^5.0.0 \
+            typescript \
+            eslint-plugin-vue \
+            eslint-plugin-import \
+            eslint-plugin-promise \
+            eslint-plugin-prettier \
+            eslint-plugin-compat \
+            --dev
 ```
 
 ### 2) Configure ESLint
@@ -26,7 +50,28 @@ Within your ESLint config file:
 ```diff
 extends: [
   '@lemonbot.fun/eslint-config-vue',
-]
+],
+```
+#### Setting import resolver.
+If you are using `vue-cli` add config blow
+```diff
+settings: {
+  'import/resolver': {
+    webpack: {
+      config: require.resolve('@vue/cli-service/webpack.config.js'),
+    }
+  }
+},
+```
+If you are using webpack standalone, add config blow
+```diff
+settings: {
+  'import/resolver': {
+    webpack: {
+      config: './path-to-your-webpack.config.js',
+    }
+  }
+},
 ```
 
 ## Credits

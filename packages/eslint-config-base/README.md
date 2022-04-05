@@ -7,15 +7,37 @@ Enhances Airbnb's ESLint config with TypeScript support
 ### 1) Install dependencies (and peer dependencies)
 
 ```bash
-npm install @lemonbot.fun/eslint-config-base \
-            @typescript-eslint/eslint-plugin@^5.0.0 \
-            @typescript-eslint/parser@^5.0.0 \
-            typescript \
-            eslint-plugin-import \
-            eslint-plugin-promise \
-            eslint-plugin-prettier \
-            eslint-plugin-compat \
-            --save-dev
+npm i @lemonbot.fun/eslint-config-base \
+    @typescript-eslint/eslint-plugin@^5.0.0 \
+    @typescript-eslint/parser@^5.0.0 \
+    typescript \
+    eslint-plugin-import \
+    eslint-plugin-promise \
+    eslint-plugin-prettier \
+    eslint-plugin-compat \
+    -D
+            
+# eg: pnpm
+pnpm add @lemonbot.fun/eslint-config-base \
+    @typescript-eslint/eslint-plugin@^5.0.0 \
+    @typescript-eslint/parser@^5.0.0 \
+    typescript \
+    eslint-plugin-import \
+    eslint-plugin-promise \
+    eslint-plugin-prettier \
+    eslint-plugin-compat \
+    -D
+  
+# eg: yarn
+yarn add @lemonbot.fun/eslint-config-base \
+    @typescript-eslint/eslint-plugin@^5.0.0 \
+    @typescript-eslint/parser@^5.0.0 \
+    typescript \
+    eslint-plugin-import \
+    eslint-plugin-promise \
+    eslint-plugin-prettier \
+    eslint-plugin-compat \
+    --dev
 ```
 
 ### 2) Configure ESLint
@@ -45,6 +67,36 @@ For example:
 +   project: './tsconfig.eslint.json'
 + }
 }
+```
+
+### 4) Set module resolver. 
+
+1. If you are not using compiler like `webpack` or `rullup`, add `eslint-import-resolver-typescript` to the `devDependencies`, add config to `eslintrc` like blow.
+
+```diff
+settings: {
+  'import/parsers': {
+    '@typescript-eslint/parser': ['.ts', '.tsx']
+  },
+  'import/resolver': {
+    'typescript': {
+      'alwaysTryTypes': true,
+      'project': './tsconfig.eslint.json',
+    }
+  }
+},
+```
+
+2. If you are not using webpack, add `eslint-import-resolver-webpack` to the `devDependencies`, add config to `eslintrc` like blow.
+
+```diff
+settings: {settings: {
+  'import/resolver': {
+    webpack: {
+      config: './path-to-your-webpack.config.js',
+    }
+  }
+},
 ```
 
 ### 4) Run ESLint
