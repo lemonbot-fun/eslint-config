@@ -16,7 +16,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
-    ecmaFeatures: {jsx: true},
+    ecmaFeatures: { jsx: true },
   },
   plugins: [
     'import', //
@@ -46,13 +46,13 @@ module.exports = {
     // Turn on '@typescript-eslint/keyword-spacing'
     // https://typescript-eslint.io/rules/keyword-spacing
     'keyword-spacing': 0,
-    '@typescript-eslint/keyword-spacing': ['error', {before: true, after: true}],
+    '@typescript-eslint/keyword-spacing': ['error', { before: true, after: true }],
 
     // 开启 '@typescript-eslint/object-curly-spacing' 校验
     // Turn on '@typescript-eslint/object-curly-spacing'
     // https://typescript-eslint.io/rules/keyword-spacing
     'object-curly-spacing': 0,
-    '@typescript-eslint/object-curly-spacing': ['error', 'never', {arraysInObjects: true, objectsInObjects: true}],
+    '@typescript-eslint/object-curly-spacing': ['error', 'always', { arraysInObjects: true, objectsInObjects: false }],
 
     // 关闭 '@typescript-eslint/no-var-requires' 校验
     // Turn off '@typescript-eslint/no-var-requires'
@@ -83,7 +83,7 @@ module.exports = {
     // Turn on 'quotes'
     // https://typescript-eslint.io/rules/quotes
     quotes: 0,
-    '@typescript-eslint/quotes': ['error', 'single', {avoidEscape: true, allowTemplateLiterals: true}],
+    '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
 
     // 关闭 '@typescript-eslint/return-await' 校验
     // Turn off '@typescript-eslint/return-await'
@@ -128,7 +128,7 @@ module.exports = {
     // 设置 'import/no-unresolved' 校验
     // Turn on 'import/no-unresolved'
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unresolved.md
-    'import/no-unresolved': ['error', {commonjs: true}],
+    'import/no-unresolved': ['error', { commonjs: true }],
 
     // 关闭 'import/prefer-default-export' 校验
     // Turn off 'import/prefer-default-export'
@@ -148,12 +148,12 @@ module.exports = {
     // 设置 '@typescript-eslint/no-non-null-assertion' 校验
     // Turn on 'import/no-extraneous-dependencies'
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md
-    'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
 
     // 开启 'lines-between-class-members' 校验 要求多行类成员后留空行
     // Turn on 'lines-between-class-members'
     // https://eslint.org/docs/rules/lines-between-class-members
-    'lines-between-class-members': ['error', 'always', {exceptAfterSingleLine: true}],
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 
     // 关闭 'max-classes-per-file' 校验, 允许在一个文件内定义多个类
     // Turn on 'max-classes-per-file'
@@ -163,7 +163,7 @@ module.exports = {
     // 设置行最大长度
     // enforce a maximum line length (max-len)
     // https://eslint.org/docs/rules/max-len
-    'max-len': ['error', {code: 480, comments: 480, tabWidth: 2, ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreRegExpLiterals: true}],
+    'max-len': ['error', { code: 480, comments: 480, tabWidth: 2, ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreRegExpLiterals: true }],
 
     // 允许使用位运算符
     // allow bitwise operators
@@ -183,7 +183,7 @@ module.exports = {
     // 设置 'no-multiple-empty-lines' 校验
     // Turn on 'no-multiple-empty-lines'
     // https://eslint.org/docs/rules/no-multiple-empty-lines
-    'no-multiple-empty-lines': ['error', {max: 2, maxBOF: 1}],
+    'no-multiple-empty-lines': ['error', { max: 2, maxBOF: 1 }],
 
     // 关闭 'no-nested-ternary' 校验, 允许连续的三元判断。
     // Turn off 'no-multiple-empty-lines'
@@ -226,7 +226,7 @@ module.exports = {
     // 设置 'promise/catch-or-return' 校验
     // Turn on 'promise/catch-or-return'
     // https://github.com/xjamundx/eslint-plugin-promise/blob/development/docs/rules/catch-or-return.md
-    'promise/catch-or-return': ['error', {terminationMethod: ['catch', 'asCallback', 'finally'] }],
+    'promise/catch-or-return': ['error', { terminationMethod: ['catch', 'asCallback', 'finally'] }],
 
     // 设置 'quote-props' 校验
     // Turn on 'quote-props'
@@ -239,7 +239,7 @@ module.exports = {
     'no-unused-vars': 0,
     '@typescript-eslint/no-unused-vars': 0,
     'unused-imports/no-unused-imports': 'error',
-    'unused-imports/no-unused-vars': ['error', {vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_'}],
+    'unused-imports/no-unused-vars': ['error', { vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' }],
   },
   settings: {
     'import/parsers': {
