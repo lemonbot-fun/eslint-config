@@ -216,7 +216,7 @@ module.exports = {
     // 开启 'object-shorthand' 校验，
     // Turn on 'object-shorthand'
     // https://eslint.org/docs/rules/object-shorthand
-    'object-shorthand': ['error'],
+    'object-shorthand': ['error', 'always'],
 
     // 关闭 'padded-blocks' 校验, 允许代码块首行留空。
     // Turn off 'padded-blocks'

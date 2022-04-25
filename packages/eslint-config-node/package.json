@@ -20,7 +20,7 @@
     "update-snap": "node ./tests/snapshot.js"
   },
   "dependencies": {
-    "@lemonbot.fun/eslint-config-base": "workspace:^1.8.1"
+    "@lemonbot.fun/eslint-config-base": "workspace:^1.9.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",
