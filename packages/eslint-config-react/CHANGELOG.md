@@ -1,6 +1,13 @@
 # Change Log - @lemonbot.fun/eslint-config-react
 
-This log was last generated on Sat, 09 Apr 2022 00:04:06 GMT and should not be manually modified.
+This log was last generated on Mon, 25 Apr 2022 11:27:26 GMT and should not be manually modified.
+
+## 1.5.0
+Mon, 25 Apr 2022 11:27:26 GMT
+
+### Minor changes
+
+- 修改 object-shorthand 规则设置
 
 ## 1.4.1
 Sat, 09 Apr 2022 00:04:06 GMT

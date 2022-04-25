@@ -2,6 +2,18 @@
   "name": "@lemonbot.fun/eslint-config-base",
   "entries": [
     {
+      "version": "1.10.0",
+      "tag": "@lemonbot.fun/eslint-config-base_v1.10.0",
+      "date": "Mon, 25 Apr 2022 11:27:26 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "修改 object-shorthand 规则设置"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.9.0",
       "tag": "@lemonbot.fun/eslint-config-base_v1.9.0",
       "date": "Mon, 25 Apr 2022 11:21:25 GMT",
