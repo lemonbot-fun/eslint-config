@@ -213,6 +213,11 @@ module.exports = {
     // https://eslint.org/docs/rules/no-plusplus
     'object-curly-newline': 0,
 
+    // 开启 'object-shorthand' 校验，
+    // Turn on 'object-shorthand'
+    // https://eslint.org/docs/rules/object-shorthand
+    'object-shorthand': ['error'],
+
     // 关闭 'padded-blocks' 校验, 允许代码块首行留空。
     // Turn off 'padded-blocks'
     // https://eslint.org/docs/rules/no-plusplus
