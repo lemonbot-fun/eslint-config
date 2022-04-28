@@ -228,6 +228,11 @@ module.exports = {
     // https://eslint.org/docs/rules/prefer-const
     'prefer-const': ['error'],
 
+    // 开启 'prefer-template' 校验
+    // Turn off 'prefer-template'
+    // https://eslint.org/docs/rules/prefer-template
+    'prefer-template': ['error'],
+
     // 设置 'promise/catch-or-return' 校验
     // Turn on 'promise/catch-or-return'
     // https://github.com/xjamundx/eslint-plugin-promise/blob/development/docs/rules/catch-or-return.md
