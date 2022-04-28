@@ -52,7 +52,7 @@ module.exports = {
     // Turn on '@typescript-eslint/object-curly-spacing'
     // https://typescript-eslint.io/rules/keyword-spacing
     'object-curly-spacing': 0,
-    '@typescript-eslint/object-curly-spacing': ['error', 'always', { arraysInObjects: true, objectsInObjects: false }],
+    '@typescript-eslint/object-curly-spacing': ['error', 'always', { arraysInObjects: true, objectsInObjects: true }],
 
     // 关闭 '@typescript-eslint/no-var-requires' 校验
     // Turn off '@typescript-eslint/no-var-requires'
