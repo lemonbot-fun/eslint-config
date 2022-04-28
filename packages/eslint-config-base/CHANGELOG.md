@@ -1,6 +1,13 @@
 # Change Log - @lemonbot.fun/eslint-config-base
 
-This log was last generated on Thu, 28 Apr 2022 06:13:46 GMT and should not be manually modified.
+This log was last generated on Thu, 28 Apr 2022 10:13:34 GMT and should not be manually modified.
+
+## 1.12.0
+Thu, 28 Apr 2022 10:13:34 GMT
+
+### Minor changes
+
+- 修改 @typescript-eslint/object-curly-spacing 参数
 
 ## 1.11.0
 Thu, 28 Apr 2022 06:13:46 GMT
