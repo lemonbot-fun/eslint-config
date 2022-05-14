@@ -1,6 +1,6 @@
 {
   "name": "@lemonbot.fun/eslint-config-node",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "The eslint config for personal",
   "main": "index.js",
   "repository": "https://github.com/lemonbot-fun/eslint-config.git",
@@ -20,7 +20,7 @@
     "update-snap": "node ./tests/snapshot.js"
   },
   "dependencies": {
-    "@lemonbot.fun/eslint-config-base": "workspace:^1.13.0"
+    "@lemonbot.fun/eslint-config-base": "workspace:^1.13.1"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",

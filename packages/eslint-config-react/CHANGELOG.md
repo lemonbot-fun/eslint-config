@@ -1,6 +1,13 @@
 # Change Log - @lemonbot.fun/eslint-config-react
 
-This log was last generated on Thu, 28 Apr 2022 10:15:27 GMT and should not be manually modified.
+This log was last generated on Sat, 14 May 2022 15:48:23 GMT and should not be manually modified.
+
+## 1.5.2
+Sat, 14 May 2022 15:48:23 GMT
+
+### Patches
+
+- 发版
 
 ## 1.5.1
 Thu, 28 Apr 2022 10:15:27 GMT

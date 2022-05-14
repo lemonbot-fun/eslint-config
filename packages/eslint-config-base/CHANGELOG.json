@@ -2,6 +2,18 @@
   "name": "@lemonbot.fun/eslint-config-base",
   "entries": [
     {
+      "version": "1.13.1",
+      "tag": "@lemonbot.fun/eslint-config-base_v1.13.1",
+      "date": "Sat, 14 May 2022 15:48:23 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "发版"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.13.0",
       "tag": "@lemonbot.fun/eslint-config-base_v1.13.0",
       "date": "Sat, 14 May 2022 15:46:59 GMT",
