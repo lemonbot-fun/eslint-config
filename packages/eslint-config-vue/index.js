@@ -17,19 +17,19 @@ module.exports = {
     extraFileExtensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
   },
   rules: {
-    // 关闭 '@typescript-eslint/dot-notation' 校验 开启 eslint dot-notation
+    // 禁用 '@typescript-eslint/dot-notation' 校验 开启 eslint dot-notation
     // Turn off '@typescript-eslint/dot-notation'
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
     '@typescript-eslint/dot-notation': 0,
     'dot-notation': ['error'],
 
-    // 关闭 '@typescript-eslint/no-implied-eval' 校验 使用 eslint no-implied-eval
+    // 禁用 '@typescript-eslint/no-implied-eval' 校验 使用 eslint no-implied-eval
     // Turn off '@typescript-eslint/no-implied-eval'
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/return-await.md
     '@typescript-eslint/no-implied-eval': 0,
     'no-implied-eval': ['error'],
 
-    // 关闭 '@typescript-eslint/no-implied-eval' 校验 使用 eslint no-throw-literal
+    // 禁用 '@typescript-eslint/no-implied-eval' 校验 使用 eslint no-throw-literal
     // Turn off '@typescript-eslint/no-implied-eval'
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/return-await.md
     '@typescript-eslint/no-throw-literal': 0,
@@ -40,22 +40,22 @@ module.exports = {
     // https://eslint.vuejs.org/rules/attributes-order.html
     'vue/attributes-order': ['error'],
 
-    // 关闭 'vue/no-v-html' 校验
+    // 禁用 'vue/no-v-html' 校验
     // Turn off 'vue/no-v-html'
     // https://eslint.vuejs.org/rules/no-v-html.html
     'vue/no-v-html': 0,
 
-    // 关闭 'vue/first-attribute-linebreak' 校验
+    // 禁用 'vue/first-attribute-linebreak' 校验
     // Turn off 'vue/first-attribute-linebreak'
     // https://eslint.vuejs.org/rules/first-attribute-linebreak.html
     'vue/first-attribute-linebreak': 0,
 
-    // 关闭 'vue/one-component-per-file' 校验
+    // 禁用 'vue/one-component-per-file' 校验
     // Turn off 'vue/one-component-per-file'
     // https://eslint.vuejs.org/rules/one-component-per-file.html
     'vue/one-component-per-file': 0,
 
-    // 关闭 'vue/singleline-html-element-content-newline' 校验
+    // 禁用 'vue/singleline-html-element-content-newline' 校验
     // Turn off 'vue/singleline-html-element-content-newline'
     // https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html
     'vue/singleline-html-element-content-newline': 0,
@@ -65,10 +65,10 @@ module.exports = {
     // Turn on 'vue/max-attributes-per-line'
     // https://eslint.vuejs.org/rules/max-attributes-per-line.html
     'vue/max-attributes-per-line': ['error', {
-      singleline: { 'max': 8 }, multiline: { 'max': 8 }
+      singleline: { max: 8 }, multiline: { max: 8 },
     }],
 
-    // 关闭 'vue/multiline-html-element-content-newline' 校验
+    // 禁用 'vue/multiline-html-element-content-newline' 校验
     // Turn off 'vue/multiline-html-element-content-newline'
     // https://eslint.vuejs.org/rules/multiline-html-element-content-newline.html
     'vue/multiline-html-element-content-newline': 0,
