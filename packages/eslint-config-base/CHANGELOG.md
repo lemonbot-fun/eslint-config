@@ -1,6 +1,13 @@
 # Change Log - @lemonbot.fun/eslint-config-base
 
-This log was last generated on Sun, 15 May 2022 01:23:53 GMT and should not be manually modified.
+This log was last generated on Sun, 15 May 2022 01:26:09 GMT and should not be manually modified.
+
+## 1.15.0
+Sun, 15 May 2022 01:26:09 GMT
+
+### Minor changes
+
+- 发版
 
 ## 1.14.0
 Sun, 15 May 2022 01:23:53 GMT
