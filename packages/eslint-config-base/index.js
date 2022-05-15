@@ -54,6 +54,17 @@ module.exports = {
     'object-curly-spacing': 0,
     '@typescript-eslint/object-curly-spacing': ['error', 'always', { arraysInObjects: true, objectsInObjects: true }],
 
+    // 设置 '@typescript-eslint/naming-convention' 校验
+    // Turn on '@typescript-eslint/naming-convention'
+    // https://typescript-eslint.io/rules/naming-convention
+    '@typescript-eslint/naming-convention': [
+      'error',
+      { selector: 'enum', format: ['camelCase', 'PascalCase', 'UPPER_CASE'] },
+      { selector: 'variable', format: ['camelCase', 'PascalCase', 'UPPER_CASE'] },
+      { selector: 'function', format: ['camelCase', 'PascalCase'] },
+      { selector: 'typeLike', format: ['PascalCase'] },
+    ],
+
     // 禁用 '@typescript-eslint/no-var-requires' 校验
     // Turn off '@typescript-eslint/no-var-requires'
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-var-requires.md
