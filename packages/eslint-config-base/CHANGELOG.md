@@ -1,6 +1,13 @@
 # Change Log - @lemonbot.fun/eslint-config-base
 
-This log was last generated on Sat, 14 May 2022 15:48:23 GMT and should not be manually modified.
+This log was last generated on Sun, 15 May 2022 01:23:53 GMT and should not be manually modified.
+
+## 1.14.0
+Sun, 15 May 2022 01:23:53 GMT
+
+### Minor changes
+
+- 设置 @typescript-eslint/naming-convention
 
 ## 1.13.1
 Sat, 14 May 2022 15:48:23 GMT

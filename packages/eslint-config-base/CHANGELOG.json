@@ -2,6 +2,18 @@
   "name": "@lemonbot.fun/eslint-config-base",
   "entries": [
     {
+      "version": "1.14.0",
+      "tag": "@lemonbot.fun/eslint-config-base_v1.14.0",
+      "date": "Sun, 15 May 2022 01:23:53 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "设置 @typescript-eslint/naming-convention"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.13.1",
       "tag": "@lemonbot.fun/eslint-config-base_v1.13.1",
       "date": "Sat, 14 May 2022 15:48:23 GMT",
