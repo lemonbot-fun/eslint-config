@@ -14,7 +14,6 @@ npm i @lemonbot.fun/eslint-config-node \
             eslint-plugin-compat \
             eslint-plugin-import \
             eslint-plugin-prettier \
-            eslint-plugin-promise \
             eslint-plugin-unused-imports \
             -D
             
@@ -26,7 +25,6 @@ pnpm add @lemonbot.fun/eslint-config-node \
             eslint-plugin-compat \
             eslint-plugin-import \
             eslint-plugin-prettier \
-            eslint-plugin-promise \
             eslint-plugin-unused-imports \
             -D
             
@@ -38,7 +36,6 @@ yarn add @lemonbot.fun/eslint-config-node \
             eslint-plugin-compat \
             eslint-plugin-import \
             eslint-plugin-prettier \
-            eslint-plugin-promise \
             eslint-plugin-unused-imports \
             --dev
 ```

@@ -18,7 +18,6 @@ importers:
       eslint-plugin-compat: ^3.7.0
       eslint-plugin-import: ^2.21.2
       eslint-plugin-prettier: ^4.0.0
-      eslint-plugin-promise: ^4.2.1
       eslint-plugin-unused-imports: ^2.0.0
       tape: ~5.5.2
       typescript: ^4.0.0
@@ -36,21 +35,19 @@ importers:
       eslint-plugin-compat: 3.13.0_eslint@8.10.0
       eslint-plugin-import: 2.25.4_eslint@8.10.0
       eslint-plugin-prettier: 4.0.0_49904e051f6c6f73d26c0ee759268562
-      eslint-plugin-promise: 4.3.1
       eslint-plugin-unused-imports: registry.npmjs.org/eslint-plugin-unused-imports/2.0.0_de22cbc9f96ca681d1464dfebd19a4bb
       tape: 5.5.2
       typescript: 4.6.2
 
   ../../packages/eslint-config-node:
     specifiers:
-      '@lemonbot.fun/eslint-config-base': workspace:^1.7.2
+      '@lemonbot.fun/eslint-config-base': workspace:^1.15.0
       '@typescript-eslint/eslint-plugin': ~5.15.0
       '@typescript-eslint/parser': ^5.0.0
       eslint: ^8.0.0
       eslint-plugin-compat: ^3.7.0
       eslint-plugin-import: ^2.21.2
       eslint-plugin-prettier: ^4.0.0
-      eslint-plugin-promise: ^4.2.1
       eslint-plugin-unused-imports: ^2.0.0
       tape: ~5.5.2
       typescript: ^4.0.5
@@ -63,21 +60,19 @@ importers:
       eslint-plugin-compat: registry.npmjs.org/eslint-plugin-compat/3.13.0_eslint@8.10.0
       eslint-plugin-import: registry.npmjs.org/eslint-plugin-import/2.25.4_eslint@8.10.0
       eslint-plugin-prettier: registry.npmjs.org/eslint-plugin-prettier/4.0.0_eslint@8.10.0
-      eslint-plugin-promise: registry.npmjs.org/eslint-plugin-promise/4.3.1
       eslint-plugin-unused-imports: registry.npmjs.org/eslint-plugin-unused-imports/2.0.0_de22cbc9f96ca681d1464dfebd19a4bb
       tape: 5.5.2
       typescript: 4.6.2
 
   ../../packages/eslint-config-react:
     specifiers:
-      '@lemonbot.fun/eslint-config-base': workspace:^1.7.2
+      '@lemonbot.fun/eslint-config-base': workspace:^1.15.0
       '@typescript-eslint/eslint-plugin': ~5.15.0
       '@typescript-eslint/parser': ^5.0.0
       eslint: ^8.0.0
       eslint-plugin-compat: ^3.7.0
       eslint-plugin-import: ^2.21.2
       eslint-plugin-prettier: ^4.0.0
-      eslint-plugin-promise: ^4.2.1
       eslint-plugin-react: ^7.20.0
       eslint-plugin-react-hooks: ^4.0.4
       eslint-plugin-unused-imports: ^2.0.0
@@ -95,7 +90,6 @@ importers:
       eslint-plugin-compat: registry.npmjs.org/eslint-plugin-compat/3.13.0_eslint@8.10.0
       eslint-plugin-import: registry.npmjs.org/eslint-plugin-import/2.25.4_eslint@8.10.0
       eslint-plugin-prettier: registry.npmjs.org/eslint-plugin-prettier/4.0.0_eslint@8.10.0
-      eslint-plugin-promise: registry.npmjs.org/eslint-plugin-promise/4.3.1
       eslint-plugin-unused-imports: registry.npmjs.org/eslint-plugin-unused-imports/2.0.0_de22cbc9f96ca681d1464dfebd19a4bb
       react: 17.0.2
       tape: 5.5.2
@@ -103,14 +97,13 @@ importers:
 
   ../../packages/eslint-config-vue:
     specifiers:
-      '@lemonbot.fun/eslint-config-base': workspace:^1.7.2
+      '@lemonbot.fun/eslint-config-base': workspace:^1.15.0
       '@typescript-eslint/eslint-plugin': ~5.15.0
       '@typescript-eslint/parser': ^5.0.0
       eslint: ^8.0.0
       eslint-plugin-compat: ^3.7.0
       eslint-plugin-import: ^2.21.2
       eslint-plugin-prettier: ^4.0.0
-      eslint-plugin-promise: ^4.2.1
       eslint-plugin-unused-imports: ^2.0.0
       eslint-plugin-vue: ^8.0.0
       tape: ~5.5.2
@@ -128,7 +121,6 @@ importers:
       eslint-plugin-compat: registry.npmjs.org/eslint-plugin-compat/3.13.0_eslint@8.10.0
       eslint-plugin-import: registry.npmjs.org/eslint-plugin-import/2.25.4_eslint@8.10.0
       eslint-plugin-prettier: registry.npmjs.org/eslint-plugin-prettier/4.0.0_eslint@8.10.0
-      eslint-plugin-promise: registry.npmjs.org/eslint-plugin-promise/4.3.1
       eslint-plugin-unused-imports: registry.npmjs.org/eslint-plugin-unused-imports/2.0.0_de22cbc9f96ca681d1464dfebd19a4bb
       tape: 5.5.2
       typescript: 4.6.2
@@ -828,11 +820,6 @@ packages:
       eslint: 8.10.0
       eslint-config-prettier: 8.5.0_eslint@8.10.0
       prettier-linter-helpers: 1.0.0
-    dev: true
-
-  /eslint-plugin-promise/4.3.1:
-    resolution: {integrity: sha512-bY2sGqyptzFBDLh/GMbAxfdJC+b0f23ME63FOE4+Jao0oZ3E1LEwFtWJX/1pGMJLiTtrSSern2CRM/g+dfc0eQ==}
-    engines: {node: '>=6'}
     dev: true
 
   /eslint-plugin-react-hooks/4.3.0_eslint@8.10.0:
@@ -2459,13 +2446,6 @@ packages:
     dependencies:
       eslint: 8.10.0
       prettier-linter-helpers: registry.npmjs.org/prettier-linter-helpers/1.0.0
-    dev: true
-
-  registry.npmjs.org/eslint-plugin-promise/4.3.1:
-    resolution: {integrity: sha512-bY2sGqyptzFBDLh/GMbAxfdJC+b0f23ME63FOE4+Jao0oZ3E1LEwFtWJX/1pGMJLiTtrSSern2CRM/g+dfc0eQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/eslint-plugin-promise/-/eslint-plugin-promise-4.3.1.tgz}
-    name: eslint-plugin-promise
-    version: 4.3.1
-    engines: {node: '>=6'}
     dev: true
 
   registry.npmjs.org/eslint-plugin-unused-imports/2.0.0_de22cbc9f96ca681d1464dfebd19a4bb:

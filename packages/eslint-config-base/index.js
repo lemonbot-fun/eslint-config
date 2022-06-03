@@ -3,7 +3,6 @@ module.exports = {
   extends: [
     'prettier', //
     'plugin:import/typescript',
-    'plugin:promise/recommended',
     'plugin:compat/recommended',
     'plugin:@typescript-eslint/recommended',
     'airbnb-typescript/base',
@@ -20,7 +19,6 @@ module.exports = {
   },
   plugins: [
     'import', //
-    'promise',
     'prettier',
     'unused-imports',
     '@typescript-eslint/eslint-plugin',
@@ -243,16 +241,6 @@ module.exports = {
     // Turn off 'prefer-template'
     // https://eslint.org/docs/rules/prefer-template
     'prefer-template': ['error'],
-
-    // 禁用 'promise/catch-or-return' 校验
-    // Turn on 'promise/catch-or-return'
-    // https://github.com/xjamundx/eslint-plugin-promise/blob/development/docs/rules/catch-or-return.md
-    'promise/catch-or-return': ['error', { terminationMethod: ['catch', 'asCallback', 'finally'] }],
-
-    // 禁用 'promise/param-names' 校验
-    // Turn off 'promise/param-names'
-    // https://github.com/xjamundx/eslint-plugin-promise/blob/development/docs/rules/param-names.md
-    'promise/param-names': 0,
 
     // 设置 'quote-props' 校验
     // Turn on 'quote-props'
