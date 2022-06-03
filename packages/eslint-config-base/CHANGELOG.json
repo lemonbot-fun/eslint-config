@@ -2,6 +2,18 @@
   "name": "@lemonbot.fun/eslint-config-base",
   "entries": [
     {
+      "version": "1.16.0",
+      "tag": "@lemonbot.fun/eslint-config-base_v1.16.0",
+      "date": "Fri, 03 Jun 2022 09:50:41 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "禁用 eslint-plugin-promise 检测"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.15.0",
       "tag": "@lemonbot.fun/eslint-config-base_v1.15.0",
       "date": "Sun, 15 May 2022 01:26:09 GMT",

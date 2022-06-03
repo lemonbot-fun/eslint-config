@@ -2,6 +2,23 @@
   "name": "@lemonbot.fun/eslint-config-vue",
   "entries": [
     {
+      "version": "1.11.0",
+      "tag": "@lemonbot.fun/eslint-config-vue_v1.11.0",
+      "date": "Fri, 03 Jun 2022 09:50:41 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "禁用 eslint-plugin-promise 检测"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@lemonbot.fun/eslint-config-base\" from `^1.15.0` to `^1.16.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.10.0",
       "tag": "@lemonbot.fun/eslint-config-vue_v1.10.0",
       "date": "Sun, 15 May 2022 01:26:09 GMT",
